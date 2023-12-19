@@ -40,6 +40,7 @@ nav{
     padding: 25px;
     background-color: black;
     width: 100%;
+    z-index: 1;
 }
 
 nav ul{
@@ -70,7 +71,7 @@ nav ul>li>a{
     line-height: 1.3;
 }
 
-/* Text: Bonjour et je m'appelle */
+/* Text: "Bonjour" et "je m'appelle" */
 .pres-container h1{
     font-size: 5.2em !important;
     font-weight: bold;
@@ -91,8 +92,8 @@ nav ul>li>a{
 
 /* 2ème page */
 
-.learning-container{
-    min-height: 100vh;
+.about-me-container{
+    min-height: 100vh;    
 }
 
 .me{
@@ -105,10 +106,10 @@ nav ul>li>a{
 }
 
 .language{
-    float: right;
+    position: relative;
     margin-right: 25px;
+    text-align: right;
 }
-
 
 .learn-title{
     font-size: 5.2em;
@@ -116,11 +117,11 @@ nav ul>li>a{
 }
 
 .logo-container{
-    position: relative;
+    position: absolute;
+    right: 0;
     display: flex;
     gap: 25px;
     align-items: center;
-    float: right;
 }
 
 .logo-container img{
@@ -146,9 +147,8 @@ nav ul>li>a{
 /* 3eme page */
 
 .projets-container{
-    min-height: 100vh;
+    min-height: 100vh;    
 }
-
 
 .projets-container h1{
     text-align: center;
@@ -157,10 +157,17 @@ nav ul>li>a{
 
 .projets-card-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
     flex-wrap: wrap;
-    margin: 0 70px;
+    gap: 50px;
 }
 
+
+.projet-card{
+    width: 27em;
+}
 
 
 .projet-card img{
@@ -174,5 +181,18 @@ nav ul>li>a{
 }
 
 .projets-card-container img{
-    width: 15em;
+    max-width: 100%;
+}
+
+.project-name{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--yellow-text);
+}
+
+.project-desc{
+    margin-bottom: 7px;
+    color: white;
 }
