@@ -146,6 +146,10 @@ nav ul>li>a{
 
 /* 3eme page */
 
+.best-project{
+    color: #ddec39;
+}
+
 .projets-container{
     min-height: 100vh;    
 }
@@ -158,41 +162,65 @@ nav ul>li>a{
 .projets-card-container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 80px;
     flex-wrap: wrap;
+    align-items: stretch;
     gap: 50px;
+    margin-top: 100px;
+    margin-left: 5em;    
+    margin-right: 5em;    
+    margin-bottom: 10em;
 }
 
+.projet-card img{
+    border-radius: 20px 20px 0 0;
+}
 
 .projet-card{
     width: 27em;
+    background-color: #000000;
+    border-bottom: 5px solid rgb(34, 34, 192);
+    border-radius: 0 0 20px 20px;
+    transition: 500ms ease;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.308);
 }
 
+.projet-card:hover{
+    transform: translateY(-12px);
+}
+
+.projet-desc-container{
+    padding: 15px;
+}
 
 .projet-card img{
-    border-radius: 15px 15px 0 0;
-}
-
-.projet-card div{
-    background-color: rgb(46, 46, 46);
-    border-radius: 0 0 15px 15px;
-    padding: 10px;
-}
-
-.projets-card-container img{
     max-width: 100%;
+    height: auto;
 }
 
 .project-name{
-    font-size: 25px;
+    font-size: 27px;
     text-align: center;
     margin-bottom: 20px;
     font-weight: 600;
-    color: var(--yellow-text);
+    color: #dfab5d;
 }
 
 .project-desc{
+    font-size: 18px;
     margin-bottom: 7px;
     color: white;
+}
+
+
+.crowd-container{
+    position: relative;
+}
+
+.crowd{
+    position: absolute;
+    right: 30%;
+    top: 2px;
+    transform: rotate(20deg);
+    z-index: -1;
+    width: 50px;
 }
