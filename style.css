@@ -214,12 +214,14 @@ nav ul>li>a{
 
 .crowd-container{
     position: relative;
+    width: max-content;
+    margin: 0 auto;
 }
 
 .crowd{
     position: absolute;
-    right: 30%;
-    top: 2px;
+    right: -15px;
+    top: 6px;
     transform: rotate(20deg);
     z-index: -1;
     width: 50px;
