@@ -1,0 +1,112 @@
+
+
+
+/* Intro part */
+
+.bonjour-text{
+    opacity: 0;
+    animation: textApperearingIntro 1s ease forwards;
+}
+
+.my-name-text{
+    opacity: 0;
+    animation: textApperearingIntro 1s ease 200ms forwards;
+}
+
+
+.pres-container h2{
+    opacity: 0;
+    animation: textApperearingIntro 1s ease 400ms forwards;
+}
+
+
+@keyframes textApperearingIntro {
+
+    0%{
+        transform: translateY(-50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* About me */
+
+.me {
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.me.animation{
+    animation: textAppear 1s ease forwards;
+}
+
+.language p{
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+.learn-title.animation{
+    animation: textAppear 1s ease forwards 0.4s;
+}
+
+@keyframes textAppear {
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.logo{
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.logo.animation{
+    animation: YAppear 1s ease forwards;
+}
+
+
+.best-project{
+    transform: translateY(-10px);
+    opacity: 0;
+}
+
+
+.best-project.animation{
+    opacity: 0;
+    animation: YAppear 1s ease forwards;
+}
+
+@keyframes YAppear {
+
+    0%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.projet-card{
+    opacity: 0;
+}
+
+.projet-card.animation{
+    animation: projetAppear 1s ease forwards;
+}
+
+
+@keyframes projetAppear {   
+
+    100%{
+        opacity: 1;
+    }
+}

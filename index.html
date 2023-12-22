@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
     <script src="script.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -20,16 +22,16 @@
 
     <main>
         <div class="pres-container">
-            <h1>Bonjour,</h1>
-            <h1>Je m'appelle <span class="yellow-text">Lucas</span>.</h1>
-            <h2><span class="blue-text">Développeur Web</span></h2>
-            <h3 class="pres-desc">Un Étudiant de 18 ans qui souhaite travailler dans le web.</h3>
+            <h1 class="bonjour-text">Bonjour,</h1>
+            <h1 class="my-name-text">Je m'appelle <span class="yellow-text">Lucas</span>.</h1>
+            <h2><span class="blue-text"><span class="word-change"></span>Web</span></h2>
+            <h3 class="pres-desc"></h3>
         </div>
 
 
         <div id="learning" class="about-me-container">
             <div class="learning">
-                <div class="me">
+                <div class="me animations">
                     <p class="learn-title">À <span class="yellow-text">propos</span></p>
                     <p>
                         J’ai 18 ans et je suis en BTS SIO pour y apprendre et développer mes compétences en programmation.
@@ -42,20 +44,26 @@
             <div class="language">
                 <p class="learn-title">Ce que j'<span class="yellow-text">apprends</span></p>
                 <ul class="logo-container">
-                    <li><a href="https://fr.wikipedia.org/wiki/C_Sharp" target="_blank"><img src="img/logo/csharp.svg" alt="cshar logo"></a></li>
-                    <li><a href="https://nodejs.org/en" target="_blank"><img src="img/logo/nodejs.svg" alt="nodejs logo"></a></li>
-                    <li><a href="https://fr.legacy.reactjs.org/" target="_blank"><img src="img/logo/react.svg" alt="react logo"></a></li>
-                    <li><a href="https://www.php.net/manual/fr/intro-whatis.php" target="_blank"><img src="img/logo/php.svg" alt="php logo"></a></li>
-                    <li><a href="https://sql.sh/" target="_blank"><img src="img/logo/sql.svg" alt="sql logo"></a></li>
-                    <li><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"><img src="img/logo/js.svg" alt="js logo"></a></li>
-                    <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank"><img src="img/logo/css.svg" alt="css logo"></a></li>
-                    <li><a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank"><img src="img/logo/html.svg" alt="html logo"></a></li>
+                    <li><a class="logo a" href="https://fr.wikipedia.org/wiki/C_Sharp" target="_blank"><img src="img/logo/csharp.svg" alt="cshar logo"></a></li>
+                    <li><a class="logo b" href="https://nodejs.org/en" target="_blank"><img src="img/logo/nodejs.svg" alt="nodejs logo"></a></li>
+                    <li><a class="logo c" href="https://fr.legacy.reactjs.org/" target="_blank"><img src="img/logo/react.svg" alt="react logo"></a></li>
+                    <li><a class="logo d" href="https://www.php.net/manual/fr/intro-whatis.php" target="_blank"><img src="img/logo/php.svg" alt="php logo"></a></li>
+                    <li><a class="logo e" href="https://sql.sh/" target="_blank"><img src="img/logo/sql.svg" alt="sql logo"></a></li>
+                    <li><a class="logo f" href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"><img src="img/logo/js.svg" alt="js logo"></a></li>
+                    <li><a class="logo g" href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank"><img src="img/logo/css.svg" alt="css logo"></a></li>
+                    <li><a class="logo h" href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank"><img src="img/logo/html.svg" alt="html logo"></a></li>
                 </ul>
             </div>
         </div>
 
-
+        <!-- Meilleurs projets -->
         <div id="projects" class="projets-container">
+            <div class="yellow-bar-container">
+                <div class="yellow-bar a"></div>
+                <div class="yellow-bar b"></div>
+                <div class="yellow-bar c"></div>
+                <div class="yellow-bar d"></div>
+            </div>
             <div class="crowd-container">
                 <img src="img/crown.png" alt="couronne img" class="crowd">
                 <h1 class="blue-text best-project">
@@ -113,6 +121,8 @@
 
             </div>
         </div>
+
+        <!-- Autres projets -->
 
         <div id="projects" class="projets-container">
             <h1><span class="blue-text">Autre projets</span></h1>

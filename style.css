@@ -23,6 +23,7 @@ body{
     background-color: #060C1C;
     font-family: 'Poppins', sans-serif;
     color: white;
+    overflow-x: hidden;
 }
 
 .blue-text{
@@ -146,8 +147,105 @@ nav ul>li>a{
 
 /* 3eme page */
 
+/* crowd */
+
+.yellow-bar-container{
+    position: relative;
+}
+
+.yellow-bar{
+    position: absolute;
+    background-color: #e5f06c;
+    border-radius: 20px;
+    width: 10px;
+    box-shadow: 0 0 15px #e5f06c93;
+}
+
+.yellow-bar.a, .yellow-bar.d{
+    height: 90px;
+    top: -20px;
+}
+
+.yellow-bar.b, .yellow-bar.c{
+    height: 70px;
+}
+
+.yellow-bar.a{
+    left: 24em;
+    transform: rotate(-35deg);
+    animation: bigBarUp 2.7s ease;
+    animation-iteration-count: infinite;
+}
+
+.yellow-bar.b{
+    left: 27.5em;
+    transform: rotate(-35deg);
+    animation: smallBarUp 3.2s ease;
+    animation-iteration-count: infinite;
+}
+
+.yellow-bar.c{
+    right: 27.5em;
+    transform: rotate(35deg);
+    animation: smallBarUp 3.2s ease;
+    animation-iteration-count: infinite;
+}
+
+.yellow-bar.d{
+    right: 24em;
+    transform: rotate(35deg);
+    animation: bigBarUp 2.7s ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bigBarUp {
+    0%{
+        top: -20px;
+    }
+
+    50%{
+        top: -10px;
+    }
+    
+    0%{
+        top: -20px;
+    }
+}
+
+@keyframes smallBarUp {
+
+    0%{
+        top: 0;
+    }
+
+    50%{
+        top: 10px;
+    }
+
+    100%{
+        top: 0;
+    }
+    
+}
+
+.crowd-container{
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.crowd{
+    position: absolute;
+    right: -15px;
+    top: 6px;
+    transform: rotate(20deg);
+    z-index: -1;
+    width: 50px;
+}
+
 .best-project{
     color: #ddec39;
+    text-shadow: 0 0 10px #ddec399d;
 }
 
 .projets-container{
@@ -179,13 +277,14 @@ nav ul>li>a{
     width: 27em;
     background-color: #000000;
     border-bottom: 5px solid rgb(34, 34, 192);
-    border-radius: 0 0 20px 20px;
+    border-radius: 20px;
     transition: 500ms ease;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.308);
 }
 
 .projet-card:hover{
-    transform: translateY(-12px);
+    transform: translateY(-12px) !important;
+    transition: transform 500ms ease; /* Ajout de la transition au hover */
 }
 
 .projet-desc-container{
@@ -212,17 +311,3 @@ nav ul>li>a{
 }
 
 
-.crowd-container{
-    position: relative;
-    width: max-content;
-    margin: 0 auto;
-}
-
-.crowd{
-    position: absolute;
-    right: -15px;
-    top: 6px;
-    transform: rotate(20deg);
-    z-index: -1;
-    width: 50px;
-}
