@@ -204,7 +204,7 @@ nav ul>li>a{
     }
 
     50%{
-        top: -10px;
+        top: -5px;
     }
     
     0%{
@@ -219,7 +219,7 @@ nav ul>li>a{
     }
 
     50%{
-        top: 10px;
+        top: 15px;
     }
 
     100%{
