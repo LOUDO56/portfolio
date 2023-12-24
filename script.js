@@ -16,6 +16,7 @@ const introDesc = new Typed(".pres-desc", {
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        // C'est un peu le bazar... Mais, ça marche 👍
         if(entry.target.classList[0] == "projets-container"){
             let projetCard = entry.target.children[entry.target.childElementCount-1].children;
             for(let i = 0; i < projetCard.length; i++){
@@ -27,7 +28,7 @@ const observer = new IntersectionObserver(entries => {
       }
     });
   }, {
-	threshold: 0.5
+	threshold: 0.25
 });
   
 
@@ -53,11 +54,13 @@ document.querySelectorAll(".logo").forEach(element => {
 animDelay = 0.1
 
 document.querySelectorAll(".projets-container").forEach(element => {
+    // Toujours le bazar, mais tant que ça marche...
     console.log(element.children[element.childElementCount-1].children)
     let projetCard = element.children[element.childElementCount-1].children
     for(let i = 0; i < projetCard.length; i++){
         projetCard[i].style.animationDelay = String(animDelay) + "s"
         animDelay += 0.1
     }
+    animDelay = 0.1;
     observer.observe(element)
 });
