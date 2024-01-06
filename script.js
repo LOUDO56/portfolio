@@ -16,11 +16,19 @@ const introDesc = new Typed(".pres-desc", {
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('animation');
+        // C'est un peu le bazar... Mais, ça marche 👍
+        if(entry.target.classList[0] == "projets-container"){
+            let projetCard = entry.target.children[entry.target.childElementCount-1].children;
+            for(let i = 0; i < projetCard.length; i++){
+                projetCard[i].classList.add('animation');
+            }
+        } else {
+            entry.target.classList.add('animation');
+        }
       }
     });
   }, {
-	threshold: 0.5
+	threshold: 0.25
 });
   
 
@@ -28,6 +36,7 @@ const eleToAnim =
     [
         document.querySelector('.me'), 
         document.querySelector('.language p'), 
+        document.querySelector('.best-project') 
     ]
 eleToAnim.forEach(element => {
     observer.observe(element)
@@ -44,8 +53,14 @@ document.querySelectorAll(".logo").forEach(element => {
 
 animDelay = 0.1
 
-document.querySelectorAll(".projet-card").forEach(element => {
-    element.style.animationDelay = String(animDelay) + "s"
-    animDelay += 0.1
+document.querySelectorAll(".projets-container").forEach(element => {
+    // Toujours le bazar, mais tant que ça marche...
+    console.log(element.children[element.childElementCount-1].children)
+    let projetCard = element.children[element.childElementCount-1].children
+    for(let i = 0; i < projetCard.length; i++){
+        projetCard[i].style.animationDelay = String(animDelay) + "s"
+        animDelay += 0.1
+    }
+    animDelay = 0.1;
     observer.observe(element)
 });
