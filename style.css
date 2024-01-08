@@ -118,7 +118,7 @@ nav ul>li>a{
     font-weight: bold;
 }
 
-.learn-title.learn{
+.language{
     margin-right: 30px; 
 }
 
@@ -255,7 +255,8 @@ nav ul>li>a{
 }
 
 .projets-container{
-    min-height: 100vh;    
+    min-height: 100vh;  
+    margin-bottom: 100px;  
 }
 
 .projets-container h1{
@@ -343,6 +344,8 @@ nav ul>li>a{
 
     .pres-desc{
         font-size: 14px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .about-me-container{
@@ -366,6 +369,7 @@ nav ul>li>a{
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
+        position: unset;
     }
 
     .logo-container a{
