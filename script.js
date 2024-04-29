@@ -7,7 +7,7 @@ const introMessage = new Typed(".word-change", {
 })
 
 const introDesc = new Typed(".pres-desc", {
-    strings: ["Un Étudiant de 18 ans qui souhaite travailler dans le web."],
+    strings: ["Un Étudiant de 19 ans qui souhaite travailler dans le web."],
     typeSpeed: 20,
     startDelay: 1500,
     showCursor: false
