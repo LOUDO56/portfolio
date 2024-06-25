@@ -306,10 +306,21 @@ nav ul>li>a{
 .project-name{
     font-size: 27px;
     text-align: center;
-    margin-bottom: 20px;
     font-weight: 600;
     color: #dfab5d;
 }
+
+.tech-used{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.tech-used img{
+    width: 35px;
+}
+
 
 .project-desc{
     font-size: 18px;
@@ -327,6 +338,64 @@ nav ul>li>a{
 
 .contact h1{
     font-size: 70px;
+}
+
+
+/* Stage */
+
+.blog{
+    margin-top: 128px !important;
+    max-width: 65em;
+    padding: 0 15px;
+    margin: 0 auto;
+    font-size: 17px;
+}
+
+.blog div>img{
+    width: 100%;
+    cursor: zoom-in;
+}
+
+.blog div{
+    width: 80%;
+    margin: 25px auto;
+}
+
+.blog p{
+    color: white;
+    margin: 15px 0;
+}
+
+.problem span, .answer span{
+    color: white;
+}
+
+.problem{
+    color: rgb(212, 89, 89) !important
+}
+
+.answer{
+    color: rgb(140, 235, 131) !important
+}
+
+.blog ul>li{
+    list-style-type: disc !important;
+    margin-left: 15px;
+}
+
+.big-title{
+    color: var(--blue-text);
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+.sub-title{
+    color: var(--blue-text);
+    font-size: 30px;
+    margin: 20px 0;
+    position: relative;
 }
 
 

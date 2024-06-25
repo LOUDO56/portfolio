@@ -61,3 +61,4 @@ document.querySelectorAll(".projets-container").forEach(element => {
     animDelay = 0.1;
     observer.observe(element)
 });
+  
