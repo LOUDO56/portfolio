@@ -15,6 +15,7 @@ const introDesc = new Typed(".pres-desc", {
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
+        console.log(entry)
       if (entry.isIntersecting) {
         if(entry.target.classList[0] == "projets-container"){
             let projetCard = entry.target.children[entry.target.childElementCount-1].children;

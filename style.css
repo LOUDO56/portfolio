@@ -17,6 +17,7 @@ li{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -502,6 +503,10 @@ nav ul>li>a{
 
     .contact h1{
         font-size: 56px;
+    }
+
+    .blog div{
+        width: 100%;
     }
     
 }

@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animations.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../animations.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script>  
     <title>Lucas LL Portfolio | Ecovoit</title>
@@ -15,8 +14,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#learning">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
+                <li><a href="/">Accueil</a></li>
             </ul>
         </nav>
     </header>
@@ -27,6 +25,11 @@
         <p>Bonjour, aujourd'hui je vais vous parler en détail de la réalisation du projet 
             <span class="yellow-text">Ecovoit</span>. 
             Ce projet en tant qu'apprentie dans le développement web est une exellente opportunité pour y apprendre de nouvelles choses plus qu'intéressante.
+        </p>
+        <p>
+            Pour rappel, <span class="yellow-text">Ecovoit</span> est un site web accessible via la platforme 
+            <span class="yellow-text">Toutatice</span> visant à faire du covoiturage uniquement entre étudiant
+            pour se rendre à leur établissement.
         </p>
         <p>Tout d'abord, j'ai du utiliser un framework que je devais seulement commencer à apprendre dans ma deuxième année de BTS SIO, qui n'est d'autre que <span class="yellow-text">Symfony</span>.</p>
         <p>
@@ -54,7 +57,7 @@
             le frontend pour proposer une meilleur expérience utilisateur sur ordinateur et téléphone.
         </p>
         <p>
-            Je me suis rendu sur <span class="yellow-text">Figma</span> pour commencer les maquettes du site pour avoir un imperçu de ce à quoi le site allait ressembler pour le structurer correctment
+            Je me suis rendu sur <span class="yellow-text">Figma</span> pour commencer les maquettes du site pour avoir un imperçu de ce à quoi le site allait ressembler pour le structurer correctment.
         </p>
         <p>
             Voici ici 7 maquettes
@@ -69,23 +72,23 @@
             <li>La messagerie</li>
         </ul>
         <div>
-            <img src="/img/projects/stage/ecovoit/figma-showcase.png" id="image" alt="figma showcase">
+            <img src="../img/projects/stage/ecovoit/figma-showcase.png" id="image" alt="figma showcase">
         </div>
         <h2 class="sub-title">La base de données</h2>
         <p>
-            Dans l'ancien projet, la base de donnée était composé d'aucune liaison 
+            Dans l'ancien projet, la base de données était composé d'aucune liaison 
             (c'est à dire aucune contrainte de clé étrangère) ce qui est pour une base de données
             primordial pour fonctionner correctement.
         </p>
         <div>
-            <img src="/img/projects/stage/ecovoit/concepteur_ecovoit.png" alt="ecovoit modele relationel v1">
+            <img src="../img/projects/stage/ecovoit/concepteur_ecovoit.png" alt="ecovoit modele relationel v1">
         </div>
         <p>
             J'ai donc pu reprendre un ancien modèle conceptuel sur le logiciel <span class="yellow-text">Looping</span> grâce à mon professeur de première année pour 
             comprendre les liaisons entre les tables.
         </p>
         <div>
-            <img src="/img/projects/stage/ecovoit/concepteur_ecovoit_v2.png" alt="ecovoit modele conceptuel">
+            <img src="../img/projects/stage/ecovoit/concepteur_ecovoit_v2.png" alt="ecovoit modele conceptuel">
         </div>
         <p>
             Après des réajustements, j'ai commencé à créer les entités sur <span class="yellow-text">Symfony</span> mais un problème se posa déjà...
@@ -96,22 +99,23 @@
             j'ai défini les trajets de <span class="yellow-text">Trajet Hebdomadaire</span> et <span class="yellow-text">Trajet Ponctuel</span> 
             comme une entité de Trajet mais pour <span class="yellow-text">Chosir P</span> et <span class="yellow-text">Choisir H</span>, je ne pouvais pas faire
             la liaison via l'entité Trajet ! Car cela casserait le modèle relationel. J'ai donc du faire en sorte de faire une liaison via l'ID d'un trajet et non de l'entité.
+            entre <span class="yellow-text">Trajet Hebdomadaire</span> et <span class="yellow-text">Choisir H</span> et vice-versa.
         </p>
         <p>
             Après avoir résolu cette erreur, j'ai pu générer la deuxième et dernière version du modèle relationnel.
         </p>
         <div>
-            <img src="/img/projects/stage/ecovoit/ecovoit_relationnel.png" alt="">
+            <img src="../img/projects/stage/ecovoit/ecovoit_relationnel.png" alt="">
         </div>
         <p>
             Maintenant, je comprenais mieux la base de données et comment intéragir avec celle-ci.
         </p>
         <h2 class="blue-text">Le site</h2>
         <p>
-            Avec la maquette et les entités prête, j'ai pu commencer conçevoir les pages.
+            Avec la maquette et les entités prête, j'ai pu commencer à conçevoir les pages.
         </p>
         <p>
-            J'ai réalisé les pages danc cet ordre.
+            J'ai réalisé les pages dans cet ordre.
         </p>
         <ul>
             <li>Accueil</li>
@@ -147,7 +151,7 @@
             </span>
         </p>
         <p>
-            Ensuite, sur la page recherche, pour afficher les détails d'un trajet je faisais l'utilisation d'un modal
+            Ensuite, sur la page recherche, pour afficher les détails d'un trajet je faisais l'utilisation d'un modal.
         </p>
         <p class="problem">
             Le problème: 
@@ -165,18 +169,21 @@
         </p>
         <p>Ensuite pour les autres pages, je n'ai pas eu de problèmes majeurs donc on va directement passé à la partie Messagerie.</p>
         <h2 class="blue-text">Messagerie</h2>
+        <div>
+            <img src="../img/projects/stage/ecovoit/messagerie-gif.gif" alt="ecovoit messagerie gif">
+        </div>
         <p>
-            La fonctionnalité la plus interessante sur ce site est la <span class="yellow-text">Messagerie</span>. En effet, je devais recréer une messagerie intégré car l'ancien projet en comportait une.
-            Cependant, sur l'ancien projet, la messagerie intégré n'était pas instantané, on devait actualiser la page pour voir la réponse de l'interlocuteur.
+            La fonctionnalité la plus interessante sur ce site est la <span class="yellow-text">Messagerie</span>. En effet, je devais créer une messagerie car l'ancien projet en comportait une.
+            Cependant, sur l'ancien projet, la messagerie intégrée n'était pas instantanée, on devait actualiser la page pour voir la réponse de l'interlocuteur.
         </p>
         <p>
             Pour éviter de refaire la même erreur, j'ai lancé mes recherches pour trouver un outil permettant de faire la messagerie en temps réel possible.
-            C'est là que je trouve le protocol open-source <a href="https://mercure.rocks/" target="_blank" class="yellow-text" style="text-decoration: underline;">Mercure</a>.
+            C'est là que je trouve le protocole open-source <a href="https://mercure.rocks/" target="_blank" class="yellow-text" style="text-decoration: underline;">Mercure</a>.
         </p>
         <p>
-            Pour la faire simple, <span class="yellow-text">Mercure</span> est un protocol ou des utilisateurs 
+            Pour la faire simple, <span class="yellow-text">Mercure</span> est un protocole ou des utilisateurs 
             s'abonnent à des topics sur un <span class="yellow-text">HUB</span> et quand une information est envoyé 
-            sur un topic sur ce <span class="yellow-text">HUB</span>, les utilisateurs abonnés à un topic reçoivent en 
+            sur un topic sur ce <span class="yellow-text">HUB</span>, les utilisateurs abonnés à ce topic reçoivent en 
             temps réel l'information (qu'on gère via <span class="yellow-text">Javascript</span>).
         </p>
         <p>
@@ -185,7 +192,7 @@
             un utilisateur.
         </p>
         <p>
-            Utiliser le protocol n'était pas très difficile, ce qui l'était en revanche c'était la logique des messages.
+            Utiliser le protocole n'était pas très difficile, ce qui l'était en revanche c'était la logique des messages.
             En effet, pour un affichage propre, j'ai du faire beaucoup de Javascript.
         </p>
         <p>
@@ -199,7 +206,40 @@
             <li>Adaptation de l'affichage des informations quand un message est supprimé</li>
             <li>Trier les messages les plus récents dans la rebrique contact</li>
         </ul>
-
+        <p>C'est la partie qui ma demandé le plus de travail, mais celui qui m'a le plus amusé.</p>
+        <p>Les étudiants utilisant ce site web pourront discuter de manière fluide avec leur interlocuteur.</p>
+        <h2 class="blue-text">Authentification</h2>
+        <p>
+            L'authentification des utilisateurs pour ce projet est un peu enigmatique car je dois utiliser 
+            le protocole <span class="yellow-text">phpCAS</span>. Cela permet de s'authentifier automatiquement à mon site web
+            en étant déjà connecté avec les connexions <span class="yellow-text">Toutatice</span>.
+        </p>
+        <p>
+            <span class="yellow-text">phpCAS</span> n'est pas beaucoup documenté mais j'ai pu trouver un bundle spécial pour pouvoir l'intégrer à mon site web.
+        </p>
+        <h2 class="blue-text">Déploiement</h2>
+        <p>
+            Pour mettre en ligne mon projet, j'ai du mettre les fichiers serveur sur le VPS OVH de mon établissement (qui sera l'établissement qui mettra en phase de test ce projet).
+            Le site est en ligne sur le lien suivant <a  href="https://btsrabelais22.fr/ecovoit" target="_blank" class="yellow-text" style="text-decoration: underline;">https://btsrabelais22.fr/ecovoit</a>
+        </p>
+        <h2 class="blue-text">Conclusion</h2>
+        <p>
+            Ce projet m'a appris beaucoup de choses sur <span class="yellow-text">Symfony</span> qui me serviront 
+            plus tard pour des projets personnels et professionels.
+        </p>
+        <p>
+            Les compétences que j'ai acquis:
+        </p>
+        <ul>
+            <li>De l'autonomie</li>
+            <li>Gérer son temps</li>
+            <li>Apprendre un framework de manière efficace</li>
+            <li>Chercher les bons élément dans la documentation</li>
+            <li>Discuter avec mon maître de stage pour comprendre ses besoins</li>
+        </ul>
+        <div>
+            <img src="../img/projects/ecovoit.png" alt="ecovoit preview">
+        </div>
     </main>
 
     <script>
@@ -216,8 +256,6 @@
             zoomable: false,
             zoomOnTouch: false,
             zoomOnWheel: false,
-        
-        
         });
     });
     </script>
