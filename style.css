@@ -277,7 +277,7 @@ nav ul>li>a{
     margin-bottom: 10em;
 }
 
-.projet-card img{
+.img-illustration{
     border-radius: 20px 20px 0 0;
 }
 
@@ -299,7 +299,7 @@ nav ul>li>a{
     padding: 15px;
 }
 
-.projet-card img{
+.img-illustration{
     max-width: 100%;
     height: auto;
 }
