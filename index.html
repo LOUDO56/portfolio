@@ -1,328 +1,539 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animations.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animations.css" />
     <script src="script.js" defer></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <title>Lucas LL Portfolio</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#learning">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#stages">Stages</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#learning">À propos</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#stages">Stages</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <div class="pres-container">
-            <h1 class="bonjour-text">Bonjour,</h1>
-            <h1 class="my-name-text">Je m'appelle <span class="yellow-text">Lucas</span>.</h1>
-            <h2><span class="blue-text"><span class="word-change"></span>Web</span></h2>
-            <h3 class="pres-desc"></h3>
+      <div class="pres-container">
+        <h1 class="bonjour-text">Bonjour,</h1>
+        <h1 class="my-name-text">
+          Je m'appelle <span class="yellow-text">Lucas</span>.
+        </h1>
+        <h2>
+          <span class="blue-text"><span class="word-change"></span>Web</span>
+        </h2>
+        <h3 class="pres-desc"></h3>
+      </div>
+
+      <div id="learning" class="about-me-container">
+        <div class="learning">
+          <div class="me animations">
+            <p class="learn-title">À <span class="yellow-text">propos</span></p>
+            <p class="about-me-desc">
+              J'ai 19 ans et je suis actuellement en BTS SIO pour développer mes
+              compétences. Depuis mon adolesence, j'ai toujours été intéressé
+              par la programmation mais je ne savais pas encore dans quel
+              domaine m'orienter. C'est fin septembre 2022 que j'ai commencé à
+              faire du web et j'ai très vite accroché. Encore aujourd'hui, je
+              continue de développer mes compétences dans le domaine du web et
+              je souhaite pouvoir y contribuer professionellement.
+            </p>
+          </div>
         </div>
-
-
-        <div id="learning" class="about-me-container">
-            <div class="learning">
-                <div class="me animations">
-                    <p class="learn-title">À <span class="yellow-text">propos</span></p>
-                    <p class="about-me-desc">
-                        J'ai 19 ans et je suis actuellement en BTS SIO pour développer mes compétences.
-                        Depuis mon adolesence, j'ai toujours été intéressé par la programmation mais je ne savais pas encore dans quel domaine m'orienter.
-                        C'est fin septembre 2022 que j'ai commencé à faire du web et j'ai très vite accroché.
-                        Encore aujourd'hui, je continue de développer mes compétences dans le domaine du web et je souhaite pouvoir y contribuer professionellement.
-                    </p>
-                </div>
-            </div>
-            <div class="language">
-                <p class="learn-title learn">Ce que j'<span class="yellow-text">apprends</span></p>
-                <ul class="logo-container">
-                    <li><a class="logo a" href="https://fr.wikipedia.org/wiki/C_Sharp" target="_blank"><img src="img/logo/csharp.svg" alt="cshar logo"></a></li>
-                    <li><a class="logo b" href="https://www.java.com/fr/" target="_blank"><img src="img/logo/java.svg" alt="java logo"></a></li>
-                    <li><a class="logo c" href="https://nodejs.org/en" target="_blank"><img src="img/logo/nodejs.svg" alt="nodejs logo"></a></li>
-                    <li><a class="logo d" href="https://fr.legacy.reactjs.org/" target="_blank"><img src="img/logo/react.svg" alt="react logo"></a></li>
-                    <li><a class="logo e" href="https://nextjs.org/" target="_blank"><img src="img/logo/nextjs.svg" alt="nextjs logo"></a></li>
-                    <li><a class="logo f" href="https://vuejs.org/" target="_blank"><img src="img/logo/vue.svg" alt="vuejs logo"></a></li>
-                    <li><a class="logo g" href="https://symfony.com/" target="_blank"><img src="img/logo/symfony.svg" alt="symfony logo"></a></li>
-                    <li><a class="logo h" href="https://www.php.net/manual/fr/intro-whatis.php" target="_blank"><img src="img/logo/php.svg" alt="php logo"></a></li>
-                    <li><a class="logo i" href="https://sql.sh/" target="_blank"><img src="img/logo/sql.svg" alt="sql logo"></a></li>
-                    <li><a class="logo j" href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"><img src="img/logo/js.svg" alt="js logo"></a></li>
-                    <li><a class="logo k" href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank"><img src="img/logo/css.svg" alt="css logo"></a></li>
-                    <li><a class="logo l" href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank"><img src="img/logo/html.svg" alt="html logo"></a></li>
-                </ul>
-            </div>
+        <div class="language">
+          <p class="learn-title learn">
+            Ce que j'<span class="yellow-text">apprends</span>
+          </p>
+          <ul class="logo-container">
+            <li>
+              <a
+                class="logo a"
+                href="https://fr.wikipedia.org/wiki/C_Sharp"
+                target="_blank"
+                ><img src="img/logo/csharp.svg" alt="cshar logo"
+              /></a>
+            </li>
+            <li>
+              <a class="logo b" href="https://www.java.com/fr/" target="_blank"
+                ><img src="img/logo/java.svg" alt="java logo"
+              /></a>
+            </li>
+            <li>
+              <a class="logo c" href="https://nodejs.org/en" target="_blank"
+                ><img src="img/logo/nodejs.svg" alt="nodejs logo"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="logo d"
+                href="https://fr.legacy.reactjs.org/"
+                target="_blank"
+                ><img src="img/logo/react.svg" alt="react logo"
+              /></a>
+            </li>
+            <li>
+              <a class="logo e" href="https://nextjs.org/" target="_blank"
+                ><img src="img/logo/nextjs.svg" alt="nextjs logo"
+              /></a>
+            </li>
+            <li>
+              <a class="logo f" href="https://vuejs.org/" target="_blank"
+                ><img src="img/logo/vue.svg" alt="vuejs logo"
+              /></a>
+            </li>
+            <li>
+              <a class="logo g" href="https://symfony.com/" target="_blank"
+                ><img src="img/logo/symfony.svg" alt="symfony logo"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="logo h"
+                href="https://www.php.net/manual/fr/intro-whatis.php"
+                target="_blank"
+                ><img src="img/logo/php.svg" alt="php logo"
+              /></a>
+            </li>
+            <li>
+              <a class="logo i" href="https://sql.sh/" target="_blank"
+                ><img src="img/logo/sql.svg" alt="sql logo"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="logo j"
+                href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
+                target="_blank"
+                ><img src="img/logo/js.svg" alt="js logo"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="logo k"
+                href="https://developer.mozilla.org/fr/docs/Web/CSS"
+                target="_blank"
+                ><img src="img/logo/css.svg" alt="css logo"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="logo l"
+                href="https://developer.mozilla.org/fr/docs/Web/HTML"
+                target="_blank"
+                ><img src="img/logo/html.svg" alt="html logo"
+              /></a>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <!-- Meilleurs projets -->
-        <div id="projects" class="projets-container">
-            <div class="yellow-bar-container">
-                <div class="yellow-bar a"></div>
-                <div class="yellow-bar b"></div>
-                <div class="yellow-bar c"></div>
-                <div class="yellow-bar d"></div>
-            </div>
-            <div class="crowd-container">
-                <img src="img/crown.png" alt="couronne img" class="crowd">
-                <h1 class="blue-text best-project">
-                    Mes meilleurs projets
-                </h1>
-            </div>
-            <div class="projets-card-container">
-                <a href="https://gamecommerce-one.vercel.app" target="_blank" class="projet-card">
-                    <img class="img-illustration" src="img/projects/gamecommerce.png" alt="gamecommerce website">
-                    <div class="projet-desc-container">
-                        <p class="project-name">GamEcommerce</p>
-                        <div class="tech-used">
-                            <img src="/img/logo/nextjs.svg" alt="nodejs logo">
-                            <img src="/img/logo/react.svg" alt="react logo">
-                            <img src="/img/logo/typescript.svg" alt="typescript logo">
-                        </div>
-                        <p class="project-desc">Un faux site de E-Commerce qui donne des codes de jeux éligible sur n'importe quelle platforme.</p>
-                        <p class="project-desc">Ceci est un site pour m'entrainer avec NextJS, React et AuthJS.</p>
-
-                    </div>
-                </a>
-
-                <a href="https://github.com/LOUDO56/wii-list" target="_blank" class="projet-card">
-                    <img class="img-illustration" src="img/projects/wii-collec.png" alt="wii-collec preview">
-                    <div class="projet-desc-container">
-                        <p class="project-name">Gestion jeux wii</p>
-                        <div class="tech-used">
-                            <img src="/img/logo/nextjs.svg" alt="nextjs logo">
-                            <img src="/img/logo/react.svg" alt="react logo">
-                        </div>
-                        <p class="project-desc">
-                            Ce site est un projet personnel full stack fait avec NextJS.
-                        </p>
-                        <p class="project-desc">
-                            Le site est destiné à ma mère qui a une collection de jeux wii pour qu'elle puisse les gérer plus facilement.
-                        </p>
-                    </div>
-                </a>
-
-                <a href="https://github.com/LOUDO56/pymacrorecord" target="_blank" class="projet-card">
-                    <img class="img-illustration" src="img/projects/pymacrorecord.png" alt="pymacrorecord preview">
-                    <div class="projet-desc-container">
-                        <p class="project-name">PyMacroRecord</p>
-                        <div class="tech-used">
-                            <img src="/img/logo/python.png" alt="python logo">
-                        </div>
-                        <p class="project-desc">
-                            PyMacroRecord est un logiciel gratuit et open source programmé avec Python
-                        </p>
-                        <p class="project-desc">
-                            Cela permet de créer des enregistrements de votre clavier et souris pour pouvoir 
-                            éviter certaines tâches répétitives.
-
-                        </p>
-                        <p class="project-desc">
-                            Le site et le logiciel ont tous les deux été réalisé par moi.
-                        </p>
-                    </div>
-                </a>
-
-                <a href="https://github.com/LOUDO56/Atlantik/tree/website" target="_blank" class="projet-card">
-                    <img class="img-illustration" src="img/projects/atlantik_website.png" alt="atlantik website">
-                    <div class="projet-desc-container">
-                        <p class="project-name">Site internet Atlantik</p>
-                        <div class="tech-used">
-                            <img src="/img/logo/ci_4.png" alt="ci logo">
-                            <img src="/img/logo/php.svg" alt="php logo">
-                        </div>
-                        <p class="project-desc">Site internet développé avec le Framework Codeigniter 4.</p>
-                        <p class="project-desc">Le site est seulement reservé aux utilisateurs pour regarder les tarifs et réserver des traversées.</p>
-                        <p class="project-desc">Aucun panel admin a été implémenté, tous ce passe sur l'application C#.</p>
-                        <p class="project-desc">Un paiement en ligne de test a été également implémenté.</p>
-
-                    </div>
-                </a>
-
-                <a href="https://github.com/LOUDO56/bibliodrive" target="_blank" class="projet-card">
-                    <img class="img-illustration" src="img/projects/bibliodrive.png" alt="bibliodrive preview">
-                    <div class="projet-desc-container">
-                        <p class="project-name">Bibliodrive</p>
-                        <div class="tech-used">
-                            <img src="/img/logo/php.svg" alt="php logo">
-                        </div>
-                        <p class="project-desc">
-                            Bibliodrive est un projet web full stack fait durant ma première année de BTS SIO.
-                        </p>
-                        <p class="project-desc">
-                            Le site côté back a été totalement codé en PHP, utilisant comme base de données MYSQL.
-                        </p>
-                    </div>
-                </a>
-
-                <a href="https://github.com/LOUDO56/Atlantik" target="_blank" class="projet-card">
-                    <img class="img-illustration" src="img/projects/atlantik_app.png" alt="atlantik app preview">
-                    <div class="projet-desc-container">
-                        <p class="project-name">Application Admin Atlantik</p>
-                        <div class="tech-used">
-                            <img src="/img/logo/csharp.svg" alt="c# logo">
-                        </div>
-                        <p class="project-desc">
-                            Ce projet a été fait durant ma première année de BTS SIO.
-                        </p>
-                        <p class="project-desc">
-                            Cette application a été développée en C# utilisant le framework .NET.
-                        </p>
-                        <p class="project-desc">
-                            Elle sert à gérer la base de données de la compagnie fictif <b>Atlantik</b>.
-                        </p>
-                        <p class="project-desc">
-                            Une vidéo d'illustration est disponible dans le README du repo.
-                        </p>
-
-                    </div>
-                </a>
-
-            </div>
+      <!-- Meilleurs projets -->
+      <div id="projects" class="projets-container">
+        <div class="yellow-bar-container">
+          <div class="yellow-bar a"></div>
+          <div class="yellow-bar b"></div>
+          <div class="yellow-bar c"></div>
+          <div class="yellow-bar d"></div>
         </div>
-
-        <!-- Mes Stages -->
-
-        <div id="stages" class="projets-container">
-            <h1><span class="blue-text">Mes stages</span></h1>
-            <div class="projets-card-container">
-                <a href="/stage/ecovoit" class="projet-card">
-                    <img class="img-illustration" src="img/projects/ecovoit.png" alt="ecovoit preview">
-                    <div class="projet-desc-container">
-                        <p class="project-name">Ecovoit</p>
-                        <div class="tech-used">
-                            <img src="/img/logo/php.svg" alt="php logo">
-                            <img src="/img/logo/symfony.svg" alt="symfony logo">
-                            <img src="/img/logo/js.svg" alt="js logo">
-                        </div>
-                        <p class="project-desc">
-                            Ecovoit est un site de covoiturage réservé uniquement aux étudiants d'un établissement
-                        </p>
-                        <p class="project-desc">
-                            Le projet est voué à être disponible sur Toutatice et dans toute la bretagne si elle se porte bien.
-                        </p>
-                        <p class="project-desc">
-                            Ce projet a été réalisé durant mon stage de première année de BTS SIO, pour voir le suivi du stage, cliquez sur cette carte.
-                        </p>
-                    </div>
-                </a>
+        <div class="crowd-container">
+          <img src="img/crown.png" alt="couronne img" class="crowd" />
+          <h1 class="blue-text best-project">Mes meilleurs projets</h1>
+        </div>
+        <div class="projets-card-container">
+          <a href="https://envolya.com" target="_blank" class="projet-card">
+            <img
+              class="img-illustration"
+              src="img/projects/envolya.png"
+              alt="envolya website"
+            />
+            <div class="projet-desc-container">
+              <p class="project-name">Envolya</p>
+              <div class="tech-used">
+                <img src="/img/logo/nextjs.svg" alt="nodejs logo" />
+                <img src="/img/logo/react.svg" alt="react logo" />
+                <img src="/img/logo/typescript.svg" alt="typescript logo" />
+                <img src="/img/logo/postgres.svg" alt="postgres logo" />
+              </div>
+              <p class="project-desc">
+                Envolya est mon vrai premier side-project que j'ai réalisé.
+              </p>
+              <p class="project-desc">
+                Le concept est de pouvoir envoyer des lettres virtuelles à des
+                peronnes via un lien court.
+              </p>
+              <p class="project-desc">
+                J'ai beaucoup appris autant en front-end qu'en back-end, c'était
+                très enrichissant.
+              </p>
             </div>
-        </div>
+          </a>
 
-        <!-- Autres projets -->
-
-        <div id="projects" class="projets-container">
-            <h1><span class="blue-text">Autres projets</span></h1>
-            <div class="projets-card-container">
-
-                <a href="https://loudo56.github.io/product-list-with-cart/" target="_blank" class="projet-card">
-                    <img class="img-illustration" src="img/projects/product-list-card.png" alt="product-list-card preview">
-                    <div class="projet-desc-container">
-                        <p class="project-name">Liste de produits à commander</p>
-                        <div class="tech-used">
-                            <img src="/img/logo/vue.svg" alt="vuejs logo">
-                            <img src="/img/logo/tailwind.svg" alt="tailwind logo">
-                        </div>
-                        <p class="project-desc">
-                            Projet VueJS avec Tailwind. Ceci est un projet d'entraînement me permettant d'apprendre mieux VueJS
-                        </p>
-                        <p class="project-desc">
-                            On peut y sélectionner des desserts et confirmer la commande avec un modal.
-                        </p>
-                    </div>
-                </a>
-
-                <a href="https://github.com/LOUDO56/wol-react" target="_blank" class="projet-card">
-                    <img class="img-illustration" src="img/projects/wol.png" alt="wol preview">
-                    <div class="projet-desc-container">
-                        <p class="project-name">Allumage pc à distance</p>
-                        <div class="tech-used">
-                            <img src="/img/logo/nodejs.svg" alt="nodejs logo">
-                            <img src="/img/logo/typescript.svg" alt="ts logo">
-                            <img src="/img/logo/react.svg" alt="react logo">
-                        </div>
-                        <p class="project-desc">
-                            Ce projet personnel vise à pouvoir allumer, éteindre et mettre en hibernation mon pc.
-                        </p>
-                        <p class="project-desc">
-                            Ma box n'est pas compatible avec le Wake On Wan, donc j'ai acheté un raspberry pi, 
-                            et grâce à des requêtes via internet, cela envoie une commande de wake on lan à mon pc via 
-                            le raspberry pi qui lui est connecté à mon réseau local.
-                        </p>
-                    </div>
-                </a>
-
-                <a href="https://loudo56.github.io/notification-page/" target="_blank" class="projet-card">
-                    <img class="img-illustration" src="img/projects/notification-page.png" alt="notification-page preview">
-                    <div class="projet-desc-container">
-                        <p class="project-name">Page de notification (Frontend Mentor)</p>
-                        <div class="tech-used">
-                            <img src="/img/logo/html.svg" alt="html logo">
-                            <img src="/img/logo/css.svg" alt="css logo">
-                            <img src="/img/logo/js.svg" alt="js logo">
-                        </div>
-                        <p class="project-desc">
-                            Une page de notification, un exercice de Frontend Mentor.
-                        </p>
-                        <p class="project-desc">
-                            Cela simule une page de notification d'un réseau social.
-                        </p>
-                    </div>
-                </a>
-
-                <a href="https://loudo56.github.io/Space-tourism-multi-page-website/" target="_blank" class="projet-card">
-                    <img class="img-illustration" src="img/projects/space-tourism.png" alt="space-tourism preview">
-                    <div class="projet-desc-container">
-                        <p class="project-name">Tourisme spatial (Frontend Mentor)</p>
-                        <div class="tech-used">
-                            <img src="/img/logo/html.svg" alt="html logo">
-                            <img src="/img/logo/css.svg" alt="css logo">
-                            <img src="/img/logo/js.svg" alt="js logo">
-                        </div>
-                        <p class="project-desc">
-                            Un voyage dans l'espace à travers un site web. Un exercice de Frontend Mentor
-                        </p>
-                        <p class="project-desc">
-                            Ce site m'a beaucoup appris sur l'utilisation des keyframes et des animations en CSS.
-                        </p>
-                    </div>
-                </a>
-
-                <a href="https://github.com/LOUDO56/bataille_corse-python" target="_blank" class="projet-card">
-                    <img class="img-illustration" src="img/projects/bataille-corse.png" alt="pymacrorecord preview">
-                    <div class="projet-desc-container">
-                        <p class="project-name">Bataille Corse</p>
-                        <div class="tech-used">
-                            <img src="/img/logo/python.png" alt="python logo">
-                        </div>
-                        <p class="project-desc">
-                            Bataille corse est un jeu codé en Python utilisant la librarie Pygame.
-                        </p>
-                        <p class="project-desc">
-                            C'est un projet que j'ai fait durant mon année de 1ère en Bac Général spécialité NSI.
-                            Le but était de nous faire appliquer la logique des "piles" et "files", ici avec un jeu de carte.
-                        </p>
-                    </div>
-                </a>
-
+          <a
+            href="https://github.com/LOUDO56/wii-list"
+            target="_blank"
+            class="projet-card"
+          >
+            <img
+              class="img-illustration"
+              src="img/projects/wii-collec.png"
+              alt="wii-collec preview"
+            />
+            <div class="projet-desc-container">
+              <p class="project-name">Gestion jeux wii</p>
+              <div class="tech-used">
+                <img src="/img/logo/nextjs.svg" alt="nextjs logo" />
+                <img src="/img/logo/react.svg" alt="react logo" />
+              </div>
+              <p class="project-desc">
+                Ce site est un projet personnel full stack fait avec NextJS.
+              </p>
+              <p class="project-desc">
+                Le site est destiné à ma mère qui a une collection de jeux wii
+                pour qu'elle puisse les gérer plus facilement.
+              </p>
             </div>
+          </a>
+
+          <a
+            href="https://github.com/LOUDO56/pymacrorecord"
+            target="_blank"
+            class="projet-card"
+          >
+            <img
+              class="img-illustration"
+              src="img/projects/pymacrorecord.png"
+              alt="pymacrorecord preview"
+            />
+            <div class="projet-desc-container">
+              <p class="project-name">PyMacroRecord</p>
+              <div class="tech-used">
+                <img src="/img/logo/python.png" alt="python logo" />
+              </div>
+              <p class="project-desc">
+                PyMacroRecord est un logiciel gratuit et open source programmé
+                avec Python
+              </p>
+              <p class="project-desc">
+                Cela permet de créer des enregistrements de votre clavier et
+                souris pour pouvoir éviter certaines tâches répétitives.
+              </p>
+              <p class="project-desc">
+                Le site et le logiciel ont tous les deux été réalisé par moi.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/LOUDO56/Atlantik/tree/website"
+            target="_blank"
+            class="projet-card"
+          >
+            <img
+              class="img-illustration"
+              src="img/projects/atlantik_website.png"
+              alt="atlantik website"
+            />
+            <div class="projet-desc-container">
+              <p class="project-name">Site internet Atlantik</p>
+              <div class="tech-used">
+                <img src="/img/logo/ci_4.png" alt="ci logo" />
+                <img src="/img/logo/php.svg" alt="php logo" />
+              </div>
+              <p class="project-desc">
+                Site internet développé avec le Framework Codeigniter 4.
+              </p>
+              <p class="project-desc">
+                Le site est seulement reservé aux utilisateurs pour regarder les
+                tarifs et réserver des traversées.
+              </p>
+              <p class="project-desc">
+                Aucun panel admin a été implémenté, tous ce passe sur
+                l'application C#.
+              </p>
+              <p class="project-desc">
+                Un paiement en ligne de test a été également implémenté.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/LOUDO56/bibliodrive"
+            target="_blank"
+            class="projet-card"
+          >
+            <img
+              class="img-illustration"
+              src="img/projects/bibliodrive.png"
+              alt="bibliodrive preview"
+            />
+            <div class="projet-desc-container">
+              <p class="project-name">Bibliodrive</p>
+              <div class="tech-used">
+                <img src="/img/logo/php.svg" alt="php logo" />
+              </div>
+              <p class="project-desc">
+                Bibliodrive est un projet web full stack fait durant ma première
+                année de BTS SIO.
+              </p>
+              <p class="project-desc">
+                Le site côté back a été totalement codé en PHP, utilisant comme
+                base de données MYSQL.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/LOUDO56/Atlantik"
+            target="_blank"
+            class="projet-card"
+          >
+            <img
+              class="img-illustration"
+              src="img/projects/atlantik_app.png"
+              alt="atlantik app preview"
+            />
+            <div class="projet-desc-container">
+              <p class="project-name">Application Admin Atlantik</p>
+              <div class="tech-used">
+                <img src="/img/logo/csharp.svg" alt="c# logo" />
+              </div>
+              <p class="project-desc">
+                Ce projet a été fait durant ma première année de BTS SIO.
+              </p>
+              <p class="project-desc">
+                Cette application a été développée en C# utilisant le framework
+                .NET.
+              </p>
+              <p class="project-desc">
+                Elle sert à gérer la base de données de la compagnie fictif
+                <b>Atlantik</b>.
+              </p>
+              <p class="project-desc">
+                Une vidéo d'illustration est disponible dans le README du repo.
+              </p>
+            </div>
+          </a>
         </div>
+      </div>
 
-        <div class="contact">
-            <h1 class="blue-text">Me contacter</h1>
-            <p class="email">lucaslelouer.pro@gmail.com</p>
+      <!-- Mes Stages -->
+
+      <div id="stages" class="projets-container">
+        <h1><span class="blue-text">Mes stages</span></h1>
+        <div class="projets-card-container">
+          <a href="/stage/ecovoit" class="projet-card">
+            <img
+              class="img-illustration"
+              src="img/projects/ecovoit.png"
+              alt="ecovoit preview"
+            />
+            <div class="projet-desc-container">
+              <p class="project-name">Ecovoit</p>
+              <div class="tech-used">
+                <img src="/img/logo/php.svg" alt="php logo" />
+                <img src="/img/logo/symfony.svg" alt="symfony logo" />
+                <img src="/img/logo/js.svg" alt="js logo" />
+              </div>
+              <p class="project-desc">
+                Ecovoit est un site de covoiturage réservé uniquement aux
+                étudiants d'un établissement
+              </p>
+              <p class="project-desc">
+                Le projet est voué à être disponible sur Toutatice et dans toute
+                la bretagne si elle se porte bien.
+              </p>
+              <p class="project-desc">
+                Ce projet a été réalisé durant mon stage de première année de
+                BTS SIO, pour voir le suivi du stage, cliquez sur cette carte.
+              </p>
+            </div>
+          </a>
         </div>
+      </div>
 
+      <!-- Autres projets -->
 
+      <div id="projects" class="projets-container">
+        <h1><span class="blue-text">Autres projets</span></h1>
+        <div class="projets-card-container">
+          <a
+            href="https://gamecommerce-one.vercel.app"
+            target="_blank"
+            class="projet-card"
+          >
+            <img
+              class="img-illustration"
+              src="img/projects/gamecommerce.png"
+              alt="gamecommerce website"
+            />
+            <div class="projet-desc-container">
+              <p class="project-name">GamEcommerce</p>
+              <div class="tech-used">
+                <img src="/img/logo/nextjs.svg" alt="nodejs logo" />
+                <img src="/img/logo/react.svg" alt="react logo" />
+                <img src="/img/logo/typescript.svg" alt="typescript logo" />
+              </div>
+              <p class="project-desc">
+                Un faux site de E-Commerce qui donne des codes de jeux éligible
+                sur n'importe quelle platforme.
+              </p>
+              <p class="project-desc">
+                Ceci est un site pour m'entrainer avec NextJS, React et AuthJS.
+              </p>
+            </div>
+          </a>
 
+          <a
+            href="https://loudo56.github.io/product-list-with-cart/"
+            target="_blank"
+            class="projet-card"
+          >
+            <img
+              class="img-illustration"
+              src="img/projects/product-list-card.png"
+              alt="product-list-card preview"
+            />
+            <div class="projet-desc-container">
+              <p class="project-name">Liste de produits à commander</p>
+              <div class="tech-used">
+                <img src="/img/logo/vue.svg" alt="vuejs logo" />
+                <img src="/img/logo/tailwind.svg" alt="tailwind logo" />
+              </div>
+              <p class="project-desc">
+                Projet VueJS avec Tailwind. Ceci est un projet d'entraînement me
+                permettant d'apprendre mieux VueJS
+              </p>
+              <p class="project-desc">
+                On peut y sélectionner des desserts et confirmer la commande
+                avec un modal.
+              </p>
+            </div>
+          </a>
 
+          <a
+            href="https://github.com/LOUDO56/wol-react"
+            target="_blank"
+            class="projet-card"
+          >
+            <img
+              class="img-illustration"
+              src="img/projects/wol.png"
+              alt="wol preview"
+            />
+            <div class="projet-desc-container">
+              <p class="project-name">Allumage pc à distance</p>
+              <div class="tech-used">
+                <img src="/img/logo/nodejs.svg" alt="nodejs logo" />
+                <img src="/img/logo/typescript.svg" alt="ts logo" />
+                <img src="/img/logo/react.svg" alt="react logo" />
+              </div>
+              <p class="project-desc">
+                Ce projet personnel vise à pouvoir allumer, éteindre et mettre
+                en hibernation mon pc.
+              </p>
+              <p class="project-desc">
+                Ma box n'est pas compatible avec le Wake On Wan, donc j'ai
+                acheté un raspberry pi, et grâce à des requêtes via internet,
+                cela envoie une commande de wake on lan à mon pc via le
+                raspberry pi qui lui est connecté à mon réseau local.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="https://loudo56.github.io/notification-page/"
+            target="_blank"
+            class="projet-card"
+          >
+            <img
+              class="img-illustration"
+              src="img/projects/notification-page.png"
+              alt="notification-page preview"
+            />
+            <div class="projet-desc-container">
+              <p class="project-name">Page de notification (Frontend Mentor)</p>
+              <div class="tech-used">
+                <img src="/img/logo/html.svg" alt="html logo" />
+                <img src="/img/logo/css.svg" alt="css logo" />
+                <img src="/img/logo/js.svg" alt="js logo" />
+              </div>
+              <p class="project-desc">
+                Une page de notification, un exercice de Frontend Mentor.
+              </p>
+              <p class="project-desc">
+                Cela simule une page de notification d'un réseau social.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="https://loudo56.github.io/Space-tourism-multi-page-website/"
+            target="_blank"
+            class="projet-card"
+          >
+            <img
+              class="img-illustration"
+              src="img/projects/space-tourism.png"
+              alt="space-tourism preview"
+            />
+            <div class="projet-desc-container">
+              <p class="project-name">Tourisme spatial (Frontend Mentor)</p>
+              <div class="tech-used">
+                <img src="/img/logo/html.svg" alt="html logo" />
+                <img src="/img/logo/css.svg" alt="css logo" />
+                <img src="/img/logo/js.svg" alt="js logo" />
+              </div>
+              <p class="project-desc">
+                Un voyage dans l'espace à travers un site web. Un exercice de
+                Frontend Mentor
+              </p>
+              <p class="project-desc">
+                Ce site m'a beaucoup appris sur l'utilisation des keyframes et
+                des animations en CSS.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/LOUDO56/bataille_corse-python"
+            target="_blank"
+            class="projet-card"
+          >
+            <img
+              class="img-illustration"
+              src="img/projects/bataille-corse.png"
+              alt="pymacrorecord preview"
+            />
+            <div class="projet-desc-container">
+              <p class="project-name">Bataille Corse</p>
+              <div class="tech-used">
+                <img src="/img/logo/python.png" alt="python logo" />
+              </div>
+              <p class="project-desc">
+                Bataille corse est un jeu codé en Python utilisant la librarie
+                Pygame.
+              </p>
+              <p class="project-desc">
+                C'est un projet que j'ai fait durant mon année de 1ère en Bac
+                Général spécialité NSI. Le but était de nous faire appliquer la
+                logique des "piles" et "files", ici avec un jeu de carte.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h1 class="blue-text">Me contacter</h1>
+        <p class="email">lucaslelouer.pro@gmail.com</p>
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>
